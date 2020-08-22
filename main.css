@@ -30,6 +30,11 @@ body {
   color: black;
 }
 
+.special a {
+  background: rgb(156, 155, 155);
+  color: rgb(32, 32, 32);
+}
+
 
 .classes div{
   background: rgba(255,255,255,0.1);
