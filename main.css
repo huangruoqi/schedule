@@ -1,0 +1,70 @@
+body {
+  background: #307D99 url('bg.gif');
+  color: #dfdfdf;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #101010;
+  position: fixed; /* Set the navbar to fixed position */
+  left: 0;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #dfdfdf;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 20%;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.classes div{
+  background: rgba(255,255,255,0.1);
+  float:left;
+  text-align: center;
+  width: 25%;
+  text-decoration: none;
+  margin-top: 50px; 
+  padding-bottom: 50px;
+}
+
+.classes h1 {
+  font-size: 2.5rem;
+}
+.classes h2 {
+  font-size: 2rem;
+  padding: 5px 0;
+}
+
+.classes a {
+  box-shadow: 0px 1px 0px 0px #009daf;
+  background:#252525;
+  background-color:#202020;
+  border-radius:6px;
+  border:1px solid #002f90;
+  display:inline-block;
+  cursor:pointer;
+  color:#dfdfdf;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #5b6178;
+}
+.classes a:hover {
+  background: rgba(0,0,0,0);
+
+}
