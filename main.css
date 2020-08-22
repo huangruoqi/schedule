@@ -35,14 +35,13 @@ body {
   color: rgb(32, 32, 32);
 }
 
-
+/*classes*/
 .classes div{
-  background: rgba(255,255,255,0.1);
-  float:left;
   text-align: center;
   width: 25%;
+  height:220px;
   text-decoration: none;
-  margin-top: 50px; 
+  margin-top:10px;
   padding-bottom: 50px;
 }
 
@@ -51,10 +50,10 @@ body {
 }
 .classes h2 {
   font-size: 2rem;
-  padding: 5px 0;
+
 }
 
-.classes a {
+.button {
   box-shadow: 0px 1px 0px 0px #009daf;
   background:#252525;
   background-color:#202020;
@@ -72,4 +71,27 @@ body {
 .classes a:hover {
   background: rgba(0,0,0,0);
 
+}
+
+.free {
+  float: left;
+}
+
+.show {
+  float: left;
+  background: rgba(255,255,255,0.1);
+}
+
+/*individual*/
+.individual div{
+  width: 25%;
+  height: 220;
+  text-decoration: none;
+  margin-top: 50px; 
+  padding-bottom: 50px;
+}
+
+._PHY1510L {
+background: rgba(255,255,255,0.1);
+  float: left;
 }
