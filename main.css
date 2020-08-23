@@ -84,14 +84,33 @@ body {
 
 /*individual*/
 .individual div{
+
   width: 25%;
-  height: 220;
+  height: 220px;
   text-decoration: none;
-  margin-top: 50px; 
+  margin-top: 20px; 
   padding-bottom: 50px;
 }
 
-._PHY1510L {
-background: rgba(255,255,255,0.1);
+
+._MAT2250 {
   float: left;
+  background: rgba(255,255,255,0.1);
+}
+
+._PHY1510 {
+  float: left;
+  background: rgba(255,255,255,0.1);
+}
+._CS3010 {
+  float: left;
+  background: rgba(255,255,255,0.1);
+}
+._CS2640 {
+  float: left;
+  background: rgba(255,255,255,0.1);
+}
+._PHY1510L {
+  float: left;
+  background: rgba(255,255,255,0.1);
 }
