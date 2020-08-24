@@ -128,8 +128,9 @@ body {
 }
 
 .leftBracket {
+
   padding-top: 12px;
-  width:30%;
+  width:25%;
 
 }
 .stuff {
@@ -138,6 +139,6 @@ body {
 }
 
 .buttonList{
-  width: 70%;
+  width: 75%;
   text-align:left;
 }
