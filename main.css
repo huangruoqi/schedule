@@ -200,9 +200,10 @@ input[type=checkbox]:checked:disabled + label:before {
   padding-bottom: 50px;
 }
 .checkboxes {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: left;
-
+  background: rgba(255,255,255,0.1);
 }
 
 #btn {
