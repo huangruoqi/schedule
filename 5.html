@@ -6,6 +6,9 @@
     , initial-scale=1.0">
     <title>Schedule</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -17,56 +20,127 @@
 			<a href="./5.html">FRIDAY</a>
 		</div>
 	</div>
-		<div class="classes">
-			<div class="category">
-				<h1>课</h1>
-				<h1>·</h1>
-				<h1>表</h1>
+			<div class="classes">
+		<div class="category">
+			<h1>课</h1>
+			<h1>·</h1>
+			<h1>表</h1>
+		</div>
+		<div class="show">
+			<h1>MAT 2250</h1>
+			<h2>10:45-11:50</h2>
+			<a class="button" href="https://cpp.zoom.us/j/99670645031" target="_blank">Zoom Link</a>
+			<h3>Password: LinAl</h3>
+		</div>
+		<div class="show">
+			<h1>PHY 1510</h1>
+			<h2>12:00-12:50</h2>
+			<a class="button" href="https://cpp.zoom.us/j/93098313525" target="_blank">Zoom Link</a>
+			<h3>Password: phy1510</h3>
+		</div>
+		<div class="free">
+			<h1></h1>
+			<h2></h2>
+			<a></a>
+			<h3></h3>
+		</div>
+		<div class="free">
+			<h1></h1>
+			<h2></h2>
+			<a></a>
+			<h3></h3>
+		</div>
+	</div>
+	<div class="individual">
+		<div class="category">
+			<h1>杂</h1>
+			<h1>·</h1>
+			<h1>物</h1>
+		</div>
+		<div class="stuff">
+			<div class="leftBracket">
+				<img src="leftBracket.png">
 			</div>
-			<div class="show">
-				<h1>MAT 2250</h1>
-				<h2>10:45-11:50</h2>
-				<a class="button" href="https://cpp.zoom.us/j/99670645031" target="_blank">Zoom Link</a>
-				<h3>Password: LinAl</h3>
-			</div>
-			<div class="show">
-				<h1>PHY 1510</h1>
-				<h2>12:00-12:50</h2>
-				<a class="button" href="https://cpp.zoom.us/j/93098313525" target="_blank">Zoom Link</a>
-				<h3>Password: phy1510</h3>
-			</div>
-			<div class="free">
-				<h1></h1>
-				<h2></h2>
-				<a></a>
-				<h3></h3>
-			</div>
-			<div class="free">
-				<h1></h1>
-				<h2></h2>
-				<a></a>
-				<h3></h3>
+			<div class="buttonList">
+				<a class="bigButton" href="MAT2250Schedule.pdf" target="_blank">Course Calendar</a>
+				<p></p>
+				<a class="bigButton"
+					href="https://login.pearson.com/v1/piapi/piui/signin?client_id=dN4bOBG0sGO9c9HADrifwQeqma5vjREy&okurl=https:%2F%2Fportal.mypearson.com%2Fcourse-home&siteid=8313"
+					target="_blank">MylabMath</a>
 			</div>
 		</div>
-		<div class="individual">
-			<div class="category">
-				<h1>杂</h1>
-				<h1>·</h1>
-				<h1>物</h1>
+		<div class="stuff">
+			<div class="leftBracket">
+				<img src="leftBracket.png">
 			</div>
-			<div class="stuff">
-
-			</div>
-			<div class="stuff">
-
-			</div>
-			<div>
-				
-			</div>
-			<div>
-				
+			<div class="buttonList">
+				<a class="bigButton" href="PHY1510Schedule.pdf" target="_blank">Course Calendar</a>
+				<p></p>
+				<a class="bigButton"
+					href="https://blackboard.cpp.edu/webapps/blackboard/content/listContent.jsp?course_id=_189565_1&content_id=_5350740_1&mode=reset"
+					target="_blank">Course Content</a>
 			</div>
 		</div>
-    
+		<div class="noStuff">
+			
+		</div>
+		<div class="noStuff">
+			
+		</div>
+	</div>
+	<div class="homework">
+		<div class="category">
+			<h1>功</h1>
+			<h1>·</h1>
+			<h1>课</h1>
+		</div>
+		<div>
+			<form id="checkboxes" class="checkboxes">
+				<div>
+					<input class="cb" type="checkbox" id="box1">
+					<label for="box1">MAT2250</label>
+					<input class="cb" type="checkbox" id="box2">
+					<label for="box2">PHY1510</label>
+					<input class="cb" type="checkbox" id="box3">
+					<label for="box3">CS3010</label>
+					<input class="cb" type="checkbox" id="box4">
+					<label for="box4">CS2640</label>
+					<input class="cb" type="checkbox" id="box5">
+					<label for="box5">PHY1510L</label>
+					<input class="cb" type="checkbox" id="box6">
+					<label for="box6">PLS2010</label>
+				</div>
+				<div id="submitButton">
+					<div id="btn"><span class= "noselect">Submit</span>
+						<div id="circle"></div>
+					</div>
+				</div>
+				<div id="clearButton">
+					<div id="btn"><span class= "noselect">Clear</span>
+						<div id="circle"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+	  	// Your web app's Firebase configuration
+	  	var firebaseConfig = {
+	    	apiKey: "AIzaSyBp2KKZwRWbXpeqXMXgOKhpeMzWmSfKv7A",
+	    	authDomain: "schedule-1aa61.firebaseapp.com",
+	    	databaseURL: "https://schedule-1aa61.firebaseio.com",
+	    	projectId: "schedule-1aa61",
+	    	storageBucket: "schedule-1aa61.appspot.com",
+	    	messagingSenderId: "627663326398",
+	    	appId: "1:627663326398:web:f918846c5aed74c50562ef",
+	    	measurementId: "G-6DD53KKLHR"
+	  	};
+	  	// Initialize Firebase
+	  	firebase.initializeApp(firebaseConfig);
+	  	const db = firebase.firestore();
+	</script>
+	<script src="app.js"></script>
+
 </body>
+
 </html>

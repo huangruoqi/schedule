@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
 body {
   background: #307D99 url('bg.gif');
   color: #dfdfdf;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
 .navbar {
@@ -48,10 +51,10 @@ body {
 }
 
 .classes h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .classes h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 
 }
 
@@ -64,7 +67,7 @@ body {
   display:inline-block;
   cursor:pointer;
   color:#dfdfdf;
-  font-size:19px;
+  font-size:22px;
   font-weight:bold;
   padding:6px 24px;
   text-decoration:none;
@@ -80,7 +83,7 @@ body {
   display:inline-block;
   cursor:pointer;
   color:#dfdfdf;
-  font-size:25px;
+  font-size:28px;
   font-weight:bold;
   padding:6px 24px;
   text-decoration:none;
@@ -104,7 +107,7 @@ body {
 }
 
 .category h1 {
-  font-size: 2.7rem;
+  font-size: 3rem;
 }
 
 .free {
@@ -128,7 +131,6 @@ body {
 }
 
 .leftBracket {
-
   padding-top: 12px;
   width:25%;
 
@@ -136,6 +138,10 @@ body {
 .stuff {
   width: 22.5%;
   background: rgba(255,255,255,0.1);
+}
+
+.noStuff {
+  width: 22.5%;
 }
 
 .buttonList{
@@ -187,8 +193,8 @@ input[type=checkbox]:disabled + label:before {
 
 input[type=checkbox]:checked:disabled + label:before {
   transform: scale(1);
-  background-color: #bfb;
-  border-color: #bfb;
+  background-color: #aea;
+  border-color: #aea;
 }
 
 
@@ -214,7 +220,6 @@ input[type=checkbox]:checked:disabled + label:before {
   border-radius: 10px;
   color: #eee;
   font-size: 20px;
-  font-family: 'Cookie', cursive;
   position: relative;
   transition: 1s;
   -webkit-tap-highlight-color: transparent;
@@ -224,6 +229,8 @@ input[type=checkbox]:checked:disabled + label:before {
   cursor: pointer;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #btn #circle {

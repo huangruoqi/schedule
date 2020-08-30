@@ -7,6 +7,7 @@
     , initial-scale=1.0">
 	<title>Schedule</title>
 	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
 	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 </head>
@@ -114,20 +115,29 @@
 		</div>
 		<div>
 			<form id="checkboxes" class="checkboxes">
-				<input class="cb" type="checkbox" id="box1">
-				<label for="box1">MAT2250</label>
-				<input class="cb" type="checkbox" id="box2">
-				<label for="box2">PHY1510</label>
-				<input class="cb" type="checkbox" id="box3">
-				<label for="box3">CS3010</label>
-				<input class="cb" type="checkbox" id="box4">
-				<label for="box4">CS2640</label>
-				<input class="cb" type="checkbox" id="box5">
-				<label for="box5">PHY1510L</label>
-				<input class="cb" type="checkbox" id="box6">
-				<label for="box6">PLS2010</label>
-				<div id="btn"><span class= "noselect" type="submit" id="submit">Submit</span>
-					<div id="circle"></div>
+				<div>
+					<input class="cb" type="checkbox" id="box1">
+					<label for="box1">MAT2250</label>
+					<input class="cb" type="checkbox" id="box2">
+					<label for="box2">PHY1510</label>
+					<input class="cb" type="checkbox" id="box3">
+					<label for="box3">CS3010</label>
+					<input class="cb" type="checkbox" id="box4">
+					<label for="box4">CS2640</label>
+					<input class="cb" type="checkbox" id="box5">
+					<label for="box5">PHY1510L</label>
+					<input class="cb" type="checkbox" id="box6">
+					<label for="box6">PLS2010</label>
+				</div>
+				<div id="submitButton">
+					<div id="btn"><span class= "noselect">Submit</span>
+						<div id="circle"></div>
+					</div>
+				</div>
+				<div id="clearButton">
+					<div id="btn"><span class= "noselect">Clear</span>
+						<div id="circle"></div>
+					</div>
 				</div>
 			</form>
 		</div>
