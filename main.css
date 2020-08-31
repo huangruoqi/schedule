@@ -99,6 +99,7 @@ body {
 }
 
 .category {
+  padding-bottom: 50px;
   width: 10%;
   float: left;
 
@@ -107,7 +108,7 @@ body {
 }
 
 .category h1 {
-  font-size: 3rem;
+  font-size: 2.65rem;
 }
 
 .free {
@@ -199,6 +200,7 @@ input[type=checkbox]:checked:disabled + label:before {
 
 
 .homework div{
+
   float: left;
   height: 220px;
   text-decoration: none;
@@ -206,6 +208,7 @@ input[type=checkbox]:checked:disabled + label:before {
   padding-bottom: 50px;
 }
 .checkboxes {
+  border-radius: 10px 10px 0 0;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: left;
