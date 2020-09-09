@@ -4,6 +4,12 @@ body {
   background: #307D99 url('bg.gif');
   color: #dfdfdf;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .navbar {
