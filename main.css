@@ -275,3 +275,10 @@ input[type=checkbox]:checked:disabled + label:before {
   border-bottom: 2px solid #eee;
 }
 
+#submitButton {
+  height: 30px;
+}
+
+#clearButton {
+  height: 30px;
+}
